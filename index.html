@@ -5,7 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./src/styles/configurations.css">
         <link rel="stylesheet" href="./src/styles/index.css">
-        <link rel="shortcut icon" href="./src/iconWhite.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./src/imgs/iconWhite.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rock+Salt&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
         <!-- 
             #ed002b; 
             #000
@@ -17,21 +23,27 @@
 
         <header class="header">
 
-            <h2>My Story of Rock</h2>
+            <h2 class="titleHeader">My Story of <span class="spanTitleRock">Rock</span></h2>
         
-            <nav id="links">
+            <nav id="navLinks" class="navLinks">
 
                 <a href="#init" class="linkSct" title="Init">
                     Init
                 </a>
-                <a href="#" class="linkSct" title="Bands">
+                <a href="#bands" class="linkSct" title="Bands">
                     Bands
                 </a>
-                <a href="#" class="linkSct" title="New Stories">
+                <a href="#newStories" class="linkSct" title="New Stories">
                     New Stories
                 </a>
 
             </nav>
+
+            <div class="language">
+                <h4>English</h4>
+                <input type="checkbox" name="Language" id="inputLanguage">
+                <h4>Español</h4>
+            </div>
 
         </header>
 
@@ -157,7 +169,7 @@
                 </form>
                 <footer id="footer">
 
-                    <img src="./src/imgfooter.webp" alt="ROCK">
+                    <img src="./src/imgs/imgfooter.webp" alt="ROCK">
                     <p class="pFooter">New stories coming soon</p>
                     <p class="pFooter">&COPY;Developed by J'D</p>
 
