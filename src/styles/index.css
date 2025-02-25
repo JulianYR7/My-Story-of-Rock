@@ -43,7 +43,6 @@
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 .linkSct:hover::after{
-    /* text-decoration: underline #ed002b 3px solid; */
     width: 100%;
 }
 .language{
@@ -52,4 +51,40 @@
     align-items: center;
     justify-content: end;
     margin: 50px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#init {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+}
+.titlesInit {
+    margin: 5px;
+}
+#containerDescriptionInit {
+    min-width: 560px;
+    max-width: 560px;
+    min-height: 120px;
+    max-height: 560px;
+}
+#navDescriptionInit > .btnDescriptionInit {
+    border: none;
+    margin: 10px;
+    font-size: 16px;
+    background: transparent;
+}
+.btnDescriptionInitActive {
+    text-decoration: underline #ed002b 2px solid;
+    margin: 2px;
+    transition: all .4s;
 }

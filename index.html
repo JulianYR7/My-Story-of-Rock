@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./src/styles/configurations.css">
+        <link rel="stylesheet" href="./src/styles/settings.css">
         <link rel="stylesheet" href="./src/styles/index.css">
         <link rel="shortcut icon" href="./src/imgs/iconWhite.png" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,15 +51,16 @@
 
             <section id="init">
 
-                <h2>Welcome to</h2>
-                <h1>My Story of Rock</h1>
+                <h2 class="titlesInit">Welcome to</h2>
+                <h1 class="titlesInit">My Story of Rock</h1>
 
                 <div id="containerDescriptionInit">
 
                     <nav id="navDescriptionInit">
 
-                        <button class="btnDescriptionInit">What is Rock?</button>
-                        <button class="btnDescriptionInit">What does Rock transmit?</button>
+                        <button class="btnDescriptionInit" id="btnDescriptionInit1">What is Rock?</button>
+                        <button class="btnDescriptionInit" id="btnDescriptionInit2">What does Rock transmit?</button>
+                        <div class="underline"></div>
 
                     </nav>
 
@@ -180,6 +181,8 @@
             </section>
 
         </main>
+
+        <script src="./src/js/settings.js"></script>
 
     </body>
 </html>
