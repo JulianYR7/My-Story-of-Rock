@@ -8,6 +8,10 @@
     justify-content: space-between;
     box-shadow: 0px 4px 10px #494949;
 }
+.containerTitleHeader{
+    display: flex;
+    width: auto;
+}
 .titleHeader{
     display: flex;
     align-items: center;
@@ -66,7 +70,7 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
 }
 .titlesInit {
     margin: 5px;
@@ -77,14 +81,25 @@
     min-height: 120px;
     max-height: 560px;
 }
-#navDescriptionInit > .btnDescriptionInit {
+.btnDescriptionInit {
     border: none;
     margin: 10px;
     font-size: 16px;
+    position: relative;
     background: transparent;
 }
-.btnDescriptionInitActive {
-    text-decoration: underline #ed002b 2px solid;
-    margin: 2px;
-    transition: all .4s;
+.btnDescriptionInit::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background-color: #ed002b;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .4s ease-in-out;
+}
+.btnDescriptionInitActive::after {
+    transform: scaleX(1);
 }
